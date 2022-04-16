@@ -1,6 +1,9 @@
 
 
-
+.header{
+    position: sticky; top: 0;
+    z-index: 100;
+}
 .navber-item{
     display: flex;
 }

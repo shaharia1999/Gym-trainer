@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar,} from 'react-bootstrap';
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 import './Header.css'
 
@@ -9,7 +9,7 @@ const Header = () => {
         let match = useMatch({ path: resolved.pathname, end: true });
       
         return (
-          <div>
+          <div >
             <Link
               style={{ color: match ? "red" : "white" }}
               to={to}
@@ -22,7 +22,7 @@ const Header = () => {
         );
       }
     return (
-        <div>
+        <div className='header'>
             <Navbar bg="primary" expand="lg">
   <Container fluid>
      <h1 ><Link className='text-white text-decoration-none' to="/"><span className='text-danger'>B</span>ody Bil<span className='text-danger'>d</span>ing</Link></h1> 

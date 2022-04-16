@@ -1,41 +1,45 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import fastImg from '../../images/Banner/fast.jpg'
+import secondImg from '../../images/Banner/second.jpg'
+import thirdImg from '../../images/Banner/third.jpg'
+import './HomeBanner.css';
 
 const HomeBanner = () => {
     return (
-        <div>
+        <div className='banner'>
             <Carousel>
   <Carousel.Item interval={1000}>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=First slide&bg=373940"
+      src={fastImg}
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h1> I'm Your Personal Trainer</h1>
+      <p>You know exercise is good for you, but do you know how good</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item interval={500}>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=Second slide&bg=282c34"
+      src={secondImg}
       alt="Second slide"
     />
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3>I'm Your Personal Trainer</h3>
+      <p>You know exercise is good for you, but do you know how good</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=Third slide&bg=20232a"
+      src={thirdImg}
       alt="Third slide"
     />
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3>I'm Your Personal Trainer</h3>
+      <p>You know exercise is good for you, but do you know how good</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
