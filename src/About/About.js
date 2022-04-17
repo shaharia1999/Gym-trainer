@@ -60,7 +60,7 @@ I'm Passionate at web design and development. I love to do this, it's my life- e
            <div className="row">
              <div className="col-md-6 skill-div1">
                <h2>my creative  skill & exparience  :</h2>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui beatae est nostrum quod iure iusto odit fuga tenetur ab fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui beatae est nostrum quod iure iusto odit fuga tenetur ab fugit!lore1
+               <p>I have been designing websites with speed optimization skills for the  1 years. I love what I do. . I have served many with FireBase website speed optimization skills and complete SEO services.
                </p>
                <button>Read more</button>
              </div>

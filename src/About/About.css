@@ -224,7 +224,7 @@ transform: translateX(-50%);
 }
 #skill .container center{
     color:white;
-    font-size: 4rem;
+    font-size: 3rem;
     position: relative;
 }
 #skill .container center:before{
@@ -264,7 +264,7 @@ transform: translateX(-50%);
 }
 .skill-div1 p{
     line-height: 20px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 
     
 }
@@ -296,7 +296,7 @@ font-style: none;
 text-decoration: none!important;
 color:white;
 margin-top: 20px;
-font-size:2rem;
+font-size:1.3rem;
 list-style: none;
 position:relative;
 z-index:1000;
