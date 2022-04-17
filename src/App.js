@@ -10,6 +10,7 @@ import Footer from './Compunant/Footer/Footer';
 
 import './App.css'
 import RequirteAuth from './Compunant/RequreAuth/RequirteAuth';
+import About from './About/About';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/chackout" element={<RequirteAuth>
           <ChackOut></ChackOut>
         </RequirteAuth>} ></Route>
+        <Route path="/about"element={<About></About>}></Route>
         
       </Routes>
     

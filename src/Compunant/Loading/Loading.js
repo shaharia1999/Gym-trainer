@@ -7,7 +7,6 @@ const Loading = () => {
         <div className='loding'>
             <div className='d-flex mx auto'>
               <Spinner animation="border" variant="primary" />
-              
               </div>
         </div>
     );
