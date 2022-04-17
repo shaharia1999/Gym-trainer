@@ -1,13 +1,17 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Container, Nav, Navbar,} from 'react-bootstrap';
-import { Link, useMatch, useResolvedPath } from 'react-router-dom';
-import './Header.css'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link, useMatch, useNavigate, useResolvedPath } from 'react-router-dom';
+import auth from '../../firebase.init';
+import Loading from '../Loading/Loading';
+import './Header.css';
+
 
 const Header = () => {
     function CustomLink({ children, to, ...props }) {
         let resolved = useResolvedPath(to);
         let match = useMatch({ path: resolved.pathname, end: true });
-      
         return (
           <div >
             <Link
@@ -21,6 +25,19 @@ const Header = () => {
           </div>
         );
       }
+      const [user, loading, error] = useAuthState(auth);
+      const navigate=useNavigate();
+     const singout=()=>{
+      signOut(auth).than(()=>{
+        navigate('/')
+
+      })
+      .catch((error) => {
+        // An error happened.
+      });
+
+     }
+    
     return (
         <div className='header'>
             <Navbar bg="primary" expand="lg">
@@ -39,7 +56,12 @@ const Header = () => {
           <li><CustomLink to='/'>Home</CustomLink></li>
          <li><CustomLink to='/blog'>Blog</CustomLink></li> 
          <li><CustomLink to='/about'>About</CustomLink></li> 
-          <li><CustomLink to='/login'>Log in</CustomLink></li>
+         {
+           user?.uid?
+           <li><CustomLink onClick={singout} to='/' >Log Out</CustomLink></li>:
+            <li><CustomLink to='login'>Log in</CustomLink></li> 
+         }
+          
          <li><CustomLink to='/register'>Register</CustomLink></li> 
           
       </div>

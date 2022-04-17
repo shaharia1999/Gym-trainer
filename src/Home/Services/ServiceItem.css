@@ -1,0 +1,16 @@
+.Service-item{
+
+}
+.Service-item img{
+    width: 18rem;
+    height: 20rem;
+}
+@media (max-width:700px) {
+    .Service-item{
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+
+    }
+    
+}

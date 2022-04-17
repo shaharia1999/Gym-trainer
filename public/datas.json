@@ -1,0 +1,46 @@
+[
+    {
+      "id": "625b11589d95eb0f85533aa6",
+      "picture": "https://i.ibb.co/bBJsZX8/3.jpg",
+      "price": 972,
+      "name": "Exercise improves mood",
+      "description":"Exercise delivers oxygen and nutrients to your tissues and helps your cardiovascular system work more efficiently. And when your heart and lung health improve, you have more energy to tackle daily chores"
+    },
+    {
+      "id": "625b115881c586238256b93a",
+      "picture": "https://i.ibb.co/dWw696r/4.jpg",
+      "price": 548,
+      "name": "Exercise boosts energy",
+      "description":"Winded by grocery shopping or household chores? Regular physical activity can improve your muscle strength and boost your endurance."
+    },
+    {
+      "id": "625b1158db8a4f9f95a1055c",
+      "picture": "https://i.ibb.co/DgDqCWd/5.jpg",
+      "price": 550,
+      "name": " Exercise controls weight",
+      "description":"Exercise can help prevent excess weight gain or help maintain weight loss. When you engage in physical activity, you burn calories. The more intense the activity, the more calories you burn."
+    },
+    {
+      "id": "625b1158a7fecebdda199d10",
+      "picture": "https://i.ibb.co/hCHXQ8P/6.jpg",
+      "price": 634,
+      "name": "Exercise combats health conditions and diseases",
+      "description":"Worried about heart disease? Hoping to prevent high blood pressure? No matter what your current weight is, being active boosts high-density lipoprotein (HDL) cholesterol, the "
+
+    },
+    {
+        "id": "625b1158db8a4f9f95ass1055c",
+        "picture": "https://i.ibb.co/DgDqCWd/5.jpg",
+        "price": 850,
+        "name": " Exercise controls mind",
+        "description":"Exercise can help prevent excess weight gain or help maintain weight loss. When you engage in physical activity, you burn calories. The more intense the activity, the more calories you burn."
+      },
+    {
+      "id": "625b1158cad7a84261cbd576",
+      "picture": "https://i.ibb.co/7gNjdpf/2.jpg",
+      "price": 1016,
+      "name": "Exercise improves mood",
+      "description":"Need an emotional lift? Or need to destress after a stressful day? A gym session or brisk walk can help. Physical activity stimulates various brain chemicals that may leave you feeling happier, more relaxed and less anxious."
+    }
+   
+  ]
