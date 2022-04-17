@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link} from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
-import { useCreateUserWithEmailAndPassword, useSendEmailVerification, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification, useSendPasswordResetEmail, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../firebase.init';
 import Loading from './../Compunant/Loading/Loading';
 import { toast, ToastContainer } from 'react-toastify';
@@ -19,12 +19,33 @@ const Register = () => {
         loading,
         error,
       ] =useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
-      const notify = () => toast("Wow so easy!")
+   
+        
+      
+      const emailId=document.getElementById("email")?.value;
+    
+      const [sendPasswordResetEmail, sendingReast, errorReast] =     useSendPasswordResetEmail(auth);
+      
+      const reastPass=async () => {
+        await sendPasswordResetEmail( emailId);
+        notify();
+      };
      
+     
+    
+    
+      
+    
+     
+      const notify = (e) =>{
+        toast("Reast Password Sent!")};
+      
       const fromControl=(e)=>{
         e.preventDefault()
-       const email=e.target[1].value;
+      
+        const email=e.target[1].value;
        const password=e.target[2].value;
+      
        if(loading){
            <Loading></Loading>
        }
@@ -33,9 +54,11 @@ const Register = () => {
         return;
 
         }
-       createUserWithEmailAndPassword(email, password)
+       createUserWithEmailAndPassword(email, password);
+     
 
       };
+     
       if( user){
         navigate("/login")
        
@@ -45,12 +68,12 @@ const Register = () => {
     
   const googleSingin=()=>{
    signInWithGoogle()
-}
- 
-      
+};
+
+
     return (
     
-        <div className='mt-5 '>
+        <div className='mt-5 mb-5 '>
             <ToastContainer />
         <h1 className='mt-5 text-center'>This is the Registation page</h1>
         <Form onSubmit={fromControl} className='w-50 mx-auto'>
@@ -61,7 +84,7 @@ const Register = () => {
   </Form.Group>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" />
+    <Form.Control type="email" placeholder="Enter email" id="email" />
     <Form.Text className="text-muted">
       We'll never share your email with anyone else.
     </Form.Text>
@@ -71,16 +94,19 @@ const Register = () => {
     <Form.Label>Password</Form.Label>
     <Form.Control type="password" placeholder="Password" />
   </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Check me out" />
-  </Form.Group>
+ 
   <Button variant="primary" type="submit">
      Register
   </Button>
   <h2 className='text-danger'>{errors}</h2>
   <h3>All Ready have an Account ,<span ><Link className='text-primary'
    to="/login">Please Login !!</Link></span></h3>
+ <div>
+  <h3 className='text-danger reast' onClick={reastPass}>Reast Your Password</h3>
+</div>
 </Form>
+
+
            <br />
            <br />
            <div className='service-title'>
@@ -92,8 +118,11 @@ const Register = () => {
                <img src={googleImg } onClick={googleSingin} alt="" /> 
 
             </div>
+
+</div>
             
-        </div>
+      
+      
     );
 };
 
