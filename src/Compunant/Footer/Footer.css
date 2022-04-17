@@ -8,3 +8,17 @@
    
 
 }
+@media (max-width:700px) {
+    .fitness{
+        background-color: blue;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap:40px;
+        padding: 20px 30px;
+       
+    
+    }
+
+    
+}

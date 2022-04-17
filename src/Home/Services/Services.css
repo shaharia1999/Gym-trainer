@@ -1,7 +1,7 @@
 .container{
     padding:100px;
 }
-.service{
+.home-service-item{
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -39,7 +39,7 @@
         align-items: center;
         justify-content: center;
     }
-    .service{
+    .home-service-item{
         margin-top: 30px;
         display: grid;
         grid-template-columns: 1fr;

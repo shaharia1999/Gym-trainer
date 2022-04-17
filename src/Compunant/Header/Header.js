@@ -29,7 +29,7 @@ const Header = () => {
       const navigate=useNavigate();
      const singout=()=>{
       signOut(auth).than(()=>{
-        navigate('/')
+        navigate('/login')
 
       })
       .catch((error) => {

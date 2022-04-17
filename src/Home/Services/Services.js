@@ -15,13 +15,13 @@ const Services = (id) => {
     }
     
     return (
-        <div className='container container-service'>
+        <div className=' container home-service'>
             <div className='service-title'>
                <div className='hr'></div>
                <h1> Services</h1>
                <div className='hr'></div>
             </div>
-        <div className='service'>
+        <div className='home-service-item'>
             {
                 datas.map(item=><ServiceItem key={item.id} item={item} func={deteles}></ServiceItem>)
             }
