@@ -50,6 +50,9 @@ const Register = () => {
     
   const googleSingin=()=>{
    signInWithGoogle()
+   if(googleuser){
+    navigate("/login");
+   }
 };
 
 
