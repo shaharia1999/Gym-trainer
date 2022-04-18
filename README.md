@@ -1,6 +1,6 @@
-# Lapto Review
+# Gym Trainer
 
-live link[https://jim-trainer.web.app/register];
+live link --- [https://jim-trainer.web.app/register];
 
 # Bullet line
 Markup :
