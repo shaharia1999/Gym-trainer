@@ -1,6 +1,6 @@
 # Gym Trainer
 
-live link --- [https://jim-trainer.web.app/register];
+live link --- [https://jim-trainer.web.app];
 
 # Bullet line
 Markup :
