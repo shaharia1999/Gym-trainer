@@ -50,10 +50,12 @@ const Register = () => {
     
   const googleSingin=()=>{
    signInWithGoogle()
-   if(googleuser){
-    navigate("/login");
-   }
+  
 };
+if(googleuser){
+  //navugate
+  navigate("/");
+ }
 
 
     return (
@@ -63,7 +65,7 @@ const Register = () => {
         <h1 className='mt-5 text-center'>This is the Registation page</h1>
         <Form onSubmit={fromControl} className='w-50 mx-auto'>
   <Form.Group className="mb-3" >
-    <Form.Label>Name :</Form.Label>
+    <Form.Label>Name : </Form.Label>
     <Form.Control type="text" placeholder="Enter Name" />
    
   </Form.Group>
