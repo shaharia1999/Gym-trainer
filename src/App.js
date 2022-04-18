@@ -12,6 +12,8 @@ import './App.css'
 import RequirteAuth from './Compunant/RequreAuth/RequirteAuth';
 import About from './About/About';
 import Bloag from './Bloag/Bloag';
+import ReastPass from './Compunant/ReastPass/ReastPass';
+import Error from './Compunant/Error/Error';
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
         </RequirteAuth>} ></Route>
         <Route path="/about"element={<About></About>}></Route>
         <Route path="/blog" element={<Bloag/>}></Route>
+        <Route path="reast" element={<ReastPass></ReastPass>}></Route>
+        <Route path='*'element={<Error></Error>}></Route>
         
       </Routes>
     

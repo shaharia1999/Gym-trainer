@@ -246,7 +246,7 @@ transform: translateX(-50%);
     bottom:25px;
     height: 20px;
     background:#2B2B2B;
-    z-index: 10000;
+    z-index: 10;
     transform: translateX(-50%);;
 
 }
@@ -299,7 +299,7 @@ margin-top: 20px;
 font-size:1.3rem;
 list-style: none;
 position:relative;
-z-index:1000;
+z-index:10;
 }
 .skill-div2 ul li:before{
   content:"";

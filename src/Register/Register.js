@@ -21,25 +21,7 @@ const Register = () => {
       ] =useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
    
         
-      
-      const emailId=document.getElementById("email")?.value;
-    
-      const [sendPasswordResetEmail, sendingReast, errorReast] =     useSendPasswordResetEmail(auth);
-      
-      const reastPass=async () => {
-        await sendPasswordResetEmail( emailId);
-        notify();
-      };
-     
-     
-    
-    
-      
-    
-     
-      const notify = (e) =>{
-        toast("Reast Password Sent!")};
-      
+  
       const fromControl=(e)=>{
         e.preventDefault()
       
@@ -84,7 +66,7 @@ const Register = () => {
   </Form.Group>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" id="email" />
+    <Form.Control type="email" placeholder="Enter email"  />
     <Form.Text className="text-muted">
       We'll never share your email with anyone else.
     </Form.Text>
@@ -102,7 +84,7 @@ const Register = () => {
   <h3>All Ready have an Account ,<span ><Link className='text-primary'
    to="/login">Please Login !!</Link></span></h3>
  <div>
-  <h3 className='text-danger reast' onClick={reastPass}>Reast Your Password</h3>
+  <h3 className='text-danger reastPass' onClick={()=>navigate('/reast')} >Reast Your Password</h3>
 </div>
 </Form>
 

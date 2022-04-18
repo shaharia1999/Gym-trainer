@@ -2,7 +2,7 @@ import React from 'react';
 
 const Bloag = () => {
     return (
-        <div>
+        <div className='p-5 m-5'>
             <h1>Difference between authorization and authentication ??</h1>
             <h3><b>Ans :</b></h3>
             <div>

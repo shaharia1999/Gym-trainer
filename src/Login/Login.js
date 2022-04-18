@@ -73,12 +73,12 @@ let from = location.state?.from?.pathname || "/";
     Login
   </Button>
   <h2 className='text-danger'>{errors}</h2>
-
+ 
   <h3>You're New User ,<span ><Link  className='text-primary' to="/register">Please Ragister !!</Link></span></h3>
-
+  <h3 className='text-danger reastPass' onClick={()=>navigate('/reast')} >Reast Your Password</h3>
 
 </Form>
-<br />
+           <br />
            <br />
            <div className='service-title'>
                <div className='hr'></div>
