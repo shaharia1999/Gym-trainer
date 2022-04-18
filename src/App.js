@@ -11,6 +11,7 @@ import Footer from './Compunant/Footer/Footer';
 import './App.css'
 import RequirteAuth from './Compunant/RequreAuth/RequirteAuth';
 import About from './About/About';
+import Bloag from './Bloag/Bloag';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <ChackOut></ChackOut>
         </RequirteAuth>} ></Route>
         <Route path="/about"element={<About></About>}></Route>
+        <Route path="/blog" element={<Bloag/>}></Route>
         
       </Routes>
     
